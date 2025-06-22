@@ -81,6 +81,16 @@ The core logic of this project lives inside the [`Src/`](codes/) folder. Here’
 - [`Dockerfile`](Dockerfile): Docker setup to containerize and deploy the Streamlit frontend.
 - [`requirements.txt`](requirements.txt): List of Python packages required to run the pipeline.
 
+## Features
+
+- Real-time data ingestion using **Apache Kafka**
+- Stream processing and enrichment using **Apache Spark Structured Streaming**
+- Optional **Sentiment Analysis** using TextBlob
+- Analytics-ready data stored in **PostgreSQL (AWS RDS)**
+- Temporary raw data storage in **Amazon S3**
+-  Cloud-native design: compatible with **AWS EC2**, **RDS**, **S3**
+-  Dockerized setup for local development and deployment
+- Containerized Streamlit app deployed using **Amazon ECR** for storing the Docker image and **Amazon ECS** for scalable, serverless hosting of the frontend
 
 
 
