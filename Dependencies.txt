@@ -2,6 +2,7 @@ pandas
 sqlalchemy
 psycopg2-binary
 textblob
+nltk
 streamlit
 requests
 boto3
