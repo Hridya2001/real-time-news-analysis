@@ -92,6 +92,11 @@ The core logic of this project lives inside the [`Src/`](codes/) folder. Here’
 -  Dockerized setup for local development and deployment
 - Containerized Streamlit app deployed using **Amazon ECR** for storing the Docker image and **Amazon ECS** for scalable, serverless hosting of the frontend
 
+## License
+
+This project is licensed under the [MIT License](LICENSE) – feel free to use, modify, and share!
+
+
 
 
 
