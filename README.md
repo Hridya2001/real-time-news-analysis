@@ -67,6 +67,21 @@ A real-time data engineering project that fetches live news data, streams it thr
    → The **Streamlit app** is containerized using Docker  
    - Pushed to **Amazon ECR (Elastic Container Registry)**  
    - Deployed on **Amazon ECS Fargate** for serverless, scalable hosting
+  
+  ## Code Overview
+
+The core logic of this project lives inside the [`Src/`](codes/) folder. Here’s a quick look at what each file does:
+
+- [`fetch.py`](codes/fetch.py): Utility module for fetching API data — used inside the producer.
+- [`producer.py`](codes/producer.py): Pulls live news headlines from NewsAPI and streams them to a Kafka topic.
+- [`Consumer.py`](codes/Consumer.py): Listens to the Kafka topic and stores the raw news data in an S3 bucket.
+- [`streaming.py`](codes/streaming.py): Spark job that reads from Kafka/S3, cleans the data, runs sentiment analysis, and stores results in PostgreSQL.
+- [`sentiment_analysis.py`](codes/sentiment_analysis.py): Adds sentiment labels (Positive, Negative, Neutral) using **TextBlob**.
+- [`table.sql`](codes/table.sql): **PostgreSQL schema** for creating the `news_articles` table.
+- [`Dockerfile`](Dockerfile): Docker setup to containerize and deploy the Streamlit frontend.
+- [`requirements.txt`](requirements.txt): List of Python packages required to run the pipeline.
+
+
 
 
 
