@@ -3,3 +3,7 @@ sqlalchemy
 psycopg2-binary
 textblob
 streamlit
+requests
+boto3
+pyspark
+kafka-python
