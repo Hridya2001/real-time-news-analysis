@@ -6,7 +6,7 @@ A real-time data engineering project that fetches live news data, streams it thr
 
 ##  Project Architecture
 
-![Architecture](images/Architecture.png)
+![Architecture](Images/Architecture.png)
 
 ---
 
